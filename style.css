@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: Helvetica;
+}
+
+.left-col,
+.right-col {
+  position: absolute;
+  width: 50%;
+  height: 100vh;
+}
+
+.left-col {
+  background: #ad2330;
+}
+
+.right-col {
+  left: 50%;
+}
+
+.upper {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background-color: #13120e;
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  animation-delay: 3s;
+}
+
+.bottom {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(rgba(19, 18, 14, 0.3), rgba(19, 18, 14, 0.3)),
+    url("./home.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  animation-delay: 4.2s;
+}
+
+@media (max-width: 900px) {
+  .left-col {
+    width: 100%;
+  }
+  .right-col {
+    top: 100%;
+    left: 0%;
+    width: 100%;
+  }
+}
+
+.logo {
+  font-family: Poppins;
+  color: #fff;
+  position: fixed;
+  margin: 1.4em;
+  font-weight: bold;
+  z-index: 1;
+  top: 3%;
+  left: 1%;
+}
+
+.year {
+  font-family: Poppins;
+  position: absolute;
+  color: #fff;
+  bottom: 8%;
+  font-weight: bold;
+  transform: rotate(-90deg);
+  left: 3%;
+}
+
+.cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 50%;
+  background: linear-gradient(rgba(19, 18, 14, 0.7), rgba(19, 18, 14, 0.7)),
+    url("./the_score.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  opacity: 0;
+  animation: appear-text 0.0001s linear forwards;
+  animation-delay: 2.6s;
+}
+
+.data {
+  position: absolute;
+  top: 36%;
+  left: 33%;
+  transform: translate(-50%, -50%);
+  color: #cecece;
+  font-family: Poppins;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+#name {
+  font-weight: bold;
+}
+
+#artist {
+  font-size: 14px;
+}
+
+.play,
+.next ion-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  color: #ecf0f1;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  padding: 2em;
+  cursor: pointer !important;
+}
+
+.about {
+  position: absolute;
+  top: 40%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+}
+
+.about h1 {
+  font-weight: bold;
+  color: rgba(236, 240, 241, 0.1);
+  font-family: Poppins;
+  text-transform: uppercase;
+}
+
+.about p {
+  color: rgba(236, 240, 241, 0.5);
+  font-family: Poppins;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.about span:hover {
+  text-decoration: underline;
+}
+
+.media {
+  margin-top: 40px;
+}
+
+.media p {
+  color: rgba(236, 240, 241, 0.8);
+  margin-bottom: 0;
+}
+
+.media ul {
+  position: absolute;
+  list-style: none;
+  left: -24%;
+}
+
+.media ul li {
+  display: inline-block;
+  color: rgba(236, 240, 241, 0.8);
+  padding-right: 10px;
+}
+
+.next {
+  position: absolute;
+  top: 24%;
+  left: 16%;
+}
+
+.data2 {
+  position: absolute;
+  top: 12%;
+  left: 28%;
+  color: #ecf0f1;
+  font-family: Poppins;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.data2 .album-artist3 p {
+  color: #bbbbbb;
+  font-size: 12px;
+}
+
+.more {
+  position: absolute;
+  top: 78%;
+  left: 10%;
+  font-size: 12px;
+  color: rgba(236, 240, 241, 0.8);
+  text-transform: uppercase;
+  font-family: Poppins;
+  text-decoration: underline;
+}
+
+.block-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 50%;
+}
+
+.block-cover::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #13120e;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 2s;
+}
+
+.block-upper {
+  position: absolute;
+
+  width: 100%;
+  height: 50vh;
+}
+
+.block-upper::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #2a2923;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 2.4s;
+}
+
+.block-bottom {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 50vh;
+}
+
+.block-bottom::after {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #13120e;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 3.6s;
+}
+
+@keyframes rev-block {
+  0% {
+    left: 0;
+    width: 0%;
+  }
+  50% {
+    left: 0;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@keyframes appear-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
