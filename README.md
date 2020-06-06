@@ -1,15 +1,36 @@
+<h1 align="center">
+<br>
+  <img src="https://user-images.githubusercontent.com/22710485/83951062-6faaf880-a805-11ea-802e-034d3ee4fd5e.png" alt="Ecoleta" width="120">
+<br>
+<br>
+Music Player
+</h1>
+
+<p align="center">A funny layout for a music player</p>
+
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/github/license/mgsousa3103/MusicPlayer" alt="License MIT">
+  </a>
+</p>
+
 ![player_musica](https://user-images.githubusercontent.com/22710485/83809743-5e3ee080-a68d-11ea-9167-ce7e7f42346e.PNG)
 
-![](https://img.shields.io/github/issues/mgsousa3103/player_musica) ![](https://img.shields.io/github/forks/mgsousa3103/player_musica) ![](https://img.shields.io/github/stars/mgsousa3103/player_musica) ![](https://img.shields.io/github/license/mgsousa3103/player_musica)
+---
 
-## Player de Música
+## Features
 
-:smile: Site com um layout bem divertido para um player de música.
+- HTML
+- CSS
 
-###### As animações são feitas somente com CSS. Nada de JS :laughing:
+## Getting started
 
-## :memo: Licença
+1. Clone this repo using `git clone https://github.com/mgsousa3103/MusicPlayer.git`
+2. Move yourself to the appropriate directory: `cd MusicPlayer`
+3. Open the `index.html` file in your browser
 
-Projeto sob a licença [MIT](https://choosealicense.com/licenses/mit/). Para mais detalhes acesse [LICENSE](LICENSE.md)
+**Fun Fact:** _The animations of this project were done only with CSS. No JS_
 
-Made by [Matheus Guedes](https://www.linkedin.com/in/matheusgsousa/) :metal:
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) page for details
